@@ -97,7 +97,7 @@ class Solution
 											   equivalent_expresions[elem.first][equations[i][0]]);
 				}
 				// same as above but the divisor can be expressed as the dividend divided by the result of the division
-				// (e.g. x / y = z | y = x / z)
+				// (e.g. x / y = z | y = x / z) and again a variable can be expressed as one times itself
 				give_all_relations_from_to(equivalent_expresions[equations[i][0]],
 										   equivalent_expresions[equations[i][1]],
 										   1.0L / static_cast<long double>(values[i]));
